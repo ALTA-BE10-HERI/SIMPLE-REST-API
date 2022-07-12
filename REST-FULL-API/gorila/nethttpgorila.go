@@ -94,6 +94,7 @@ func UserHandlerByid(writer http.ResponseWriter, request *http.Request) {
 		res := map[string]interface{}{
 			"message": "Get data by id",
 			"data":    arrData[cnv-1],
+			// tanya tentang cnv-1 kok bisa menampilkan 1 data
 		}
 		send, err := json.Marshal(res) //mengubah data biasa ke json
 		if err != nil {
