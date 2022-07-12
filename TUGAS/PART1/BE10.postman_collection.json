@@ -1,0 +1,420 @@
+{
+	"info": {
+		"_postman_id": "6b5a729a-a46d-41e4-91d5-373e4b63338a",
+		"name": "BE10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21430304"
+	},
+	"item": [
+		{
+			"name": "PART-1",
+			"item": [
+				{
+					"name": "NEWSAPI",
+					"item": [
+						{
+							"name": "GET-NEWSAPI-TESLA",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://newsapi.org/v2/everything?q=tesla&from=2022-06-11&sortBy=publishedAt&apiKey=b41403a46ad54881aec714d96f6f8833",
+									"protocol": "https",
+									"host": [
+										"newsapi",
+										"org"
+									],
+									"path": [
+										"v2",
+										"everything"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "tesla"
+										},
+										{
+											"key": "from",
+											"value": "2022-06-11"
+										},
+										{
+											"key": "sortBy",
+											"value": "publishedAt"
+										},
+										{
+											"key": "apiKey",
+											"value": "b41403a46ad54881aec714d96f6f8833"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET-NEWSAPI-APPLE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://newsapi.org/v2/everything?q=apple&from=2022-07-10&to=2022-07-10&sortBy=popularity&apiKey=b41403a46ad54881aec714d96f6f8833",
+									"protocol": "https",
+									"host": [
+										"newsapi",
+										"org"
+									],
+									"path": [
+										"v2",
+										"everything"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "apple"
+										},
+										{
+											"key": "from",
+											"value": "2022-07-10"
+										},
+										{
+											"key": "to",
+											"value": "2022-07-10"
+										},
+										{
+											"key": "sortBy",
+											"value": "popularity"
+										},
+										{
+											"key": "apiKey",
+											"value": "b41403a46ad54881aec714d96f6f8833"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET-NEWSAPI-COUNTRY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=b41403a46ad54881aec714d96f6f8833",
+									"protocol": "https",
+									"host": [
+										"newsapi",
+										"org"
+									],
+									"path": [
+										"v2",
+										"top-headlines"
+									],
+									"query": [
+										{
+											"key": "country",
+											"value": "us"
+										},
+										{
+											"key": "category",
+											"value": "business"
+										},
+										{
+											"key": "apiKey",
+											"value": "b41403a46ad54881aec714d96f6f8833"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET-NEWSAPI-TOPHEADLINES",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://newsapi.org/v2/top-headlines?country=us&apiKey=b41403a46ad54881aec714d96f6f8833",
+									"protocol": "https",
+									"host": [
+										"newsapi",
+										"org"
+									],
+									"path": [
+										"v2",
+										"top-headlines"
+									],
+									"query": [
+										{
+											"key": "country",
+											"value": "us"
+										},
+										{
+											"key": "apiKey",
+											"value": "b41403a46ad54881aec714d96f6f8833"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET-NEWSAPI-DOMAINS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=b41403a46ad54881aec714d96f6f8833",
+									"protocol": "https",
+									"host": [
+										"newsapi",
+										"org"
+									],
+									"path": [
+										"v2",
+										"everything"
+									],
+									"query": [
+										{
+											"key": "domains",
+											"value": "wsj.com"
+										},
+										{
+											"key": "apiKey",
+											"value": "b41403a46ad54881aec714d96f6f8833"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SWAPIDEV",
+					"item": [
+						{
+							"name": "get-people",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://swapi.dev/api/people/",
+									"protocol": "https",
+									"host": [
+										"swapi",
+										"dev"
+									],
+									"path": [
+										"api",
+										"people",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get-planet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://swapi.dev/api/planets/",
+									"protocol": "https",
+									"host": [
+										"swapi",
+										"dev"
+									],
+									"path": [
+										"api",
+										"planets",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get-films",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://swapi.dev/api/films",
+									"protocol": "https",
+									"host": [
+										"swapi",
+										"dev"
+									],
+									"path": [
+										"api",
+										"films"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get-starship",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://swapi.dev/api/starships",
+									"protocol": "https",
+									"host": [
+										"swapi",
+										"dev"
+									],
+									"path": [
+										"api",
+										"starships"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get-species",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://swapi.dev/api/species/",
+									"protocol": "https",
+									"host": [
+										"swapi",
+										"dev"
+									],
+									"path": [
+										"api",
+										"species",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SWAGGERHUB",
+					"item": [
+						{
+							"name": "get-client",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/1",
+									"protocol": "https",
+									"host": [
+										"virtserver",
+										"swaggerhub",
+										"com"
+									],
+									"path": [
+										"sepulsa",
+										"RentABook-API",
+										"1.0.0",
+										"client",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "put-client",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"client_id\": 1234,\r\n  \"client_key\": \"CLIENT01\",\r\n  \"client_secret\": \"SECRET01\",\r\n  \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/1",
+									"protocol": "https",
+									"host": [
+										"virtserver",
+										"swaggerhub",
+										"com"
+									],
+									"path": [
+										"sepulsa",
+										"RentABook-API",
+										"1.0.0",
+										"client",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "post-client",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"client_id\": 1234,\r\n  \"client_key\": \"CLIENT01\",\r\n  \"client_secret\": \"SECRET01\",\r\n  \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client",
+									"protocol": "https",
+									"host": [
+										"virtserver",
+										"swaggerhub",
+										"com"
+									],
+									"path": [
+										"sepulsa",
+										"RentABook-API",
+										"1.0.0",
+										"client"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete-client",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/1",
+									"protocol": "https",
+									"host": [
+										"virtserver",
+										"swaggerhub",
+										"com"
+									],
+									"path": [
+										"sepulsa",
+										"RentABook-API",
+										"1.0.0",
+										"client",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
