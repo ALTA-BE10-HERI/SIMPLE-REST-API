@@ -1,0 +1,116 @@
+openapi: 3.0.0
+info:
+  title: "Belajar API"
+  description: "ini adalah halaman OpenApi untuk BE10"
+  version: "1.0.0"
+  contact:
+    name: Heri Sudarmono
+    email: herisudarmono99@gmail.com
+servers:
+  - url: "http:localhost:8000"
+    description: "ini Url untuk uji coba di lokal"
+  - url: "https:heritopup.com"
+    description: "ini Url aktif server"
+  - url: "https:prodVersion.com/{versi}"
+    description: "Url aktif 2"
+    variables:
+      versi:
+        default: v1
+        enum:
+          - "v1"
+          - "v2"
+tags:
+  - name: user
+    description: ini service segment user
+  - name: book
+    description: ini service segment book
+components:
+  schemas:
+    ModelUser:
+      type: object
+      properties:
+        nama:
+         type: string
+        email:
+          type: string
+        password:
+          type: string
+          format: password
+        umur:
+          type: integer
+          format: int64
+paths:
+  /user:
+    post:
+      tags:
+        - user
+      requestBody:
+        content:
+          aplication/json:
+            schema:
+              $ref: '#/components/schemas/ModelUser'
+            example:
+              nama : "heri"
+              email : "heri@gmail.com"
+              password : "qwerty"
+              umur: 23
+      responses:
+        '201':
+          description: "user created"
+          content:
+            aplication/json:
+              schema:
+                $ref: '#/components/schemas/ModelUser'
+              example:
+                nama : "heri"
+                email : "heri@gmail.com"
+                password : "qwerty"
+                umur: 23
+        '400':
+          description: "salah input"
+
+    get:
+      tags:
+        - user
+      parameters:
+        - in : query
+          required: true
+          name: id_user
+          schema: 
+            type: integer
+      responses:
+        '201':
+          description: "user created"
+        '400':
+          description: "salah input"
+  /book:
+    post:
+      tags:
+        - book
+      requestBody:
+        content:
+          aplication/json:
+            schema:
+              type: object
+              properties:
+                ID_User:
+                  type: integer
+                  format: int64
+                Judul:
+                  type: string
+      responses:
+        '201':
+          description: "Book created"
+          content:
+            aplication/json:
+              schema:
+                type: object
+                properties:
+                  ID_User:
+                    type: integer
+                    format: int64
+                  Judul:
+                    type: string
+        '400':
+          description: "salah input"
+  

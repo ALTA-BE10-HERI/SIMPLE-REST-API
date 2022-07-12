@@ -1,0 +1,28 @@
+REST meliputi method
+POST menambahkan data
+PUT untuk mengupdate data
+DELETE menghapus data
+GET untuk mengambil data
+schema : untuk memberikan contoh data yang akan keluar
+components : di gunakan untuk reuseable
+
+type : object
+pasti ada properti
+
+https://newsapi.org/v2/everything?q=indonesia&sortBy=publishedAt&apiKey=5fbb23d9efd146af9441324a247b8a54
+
+https://newsapi.org/v2 -> alamat utama (url)
+/everything -> parth parameter (tujuan spesifik)
+?
+q=indonesia&sortBy=publishedAt&apiKey=5fbb23d9efd146af9441324a247b8a54
+
+apiKey -> bagian pengenal umumnya di masukkan kolom auth
+
+
+step by step buat api
+1. Buka postman setup request body menggunakan format json
+2. input lewat requestbody dari postman
+3. baca request
+4. cocokan tipe data
+5. olah data
+6. berikan respon lewat http jika diperlukan
