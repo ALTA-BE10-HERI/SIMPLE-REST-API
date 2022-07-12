@@ -26,3 +26,7 @@ step by step buat api
 4. cocokan tipe data
 5. olah data
 6. berikan respon lewat http jika diperlukan
+
+
+===========
+1. belajar mux gorila
